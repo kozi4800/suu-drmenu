@@ -14,6 +14,8 @@ An addon for [rsg-radialmenu](https://github.com/Rexshack-RedM/rsg-radialmenu) t
 - Automatic cleanup on resource stop
 - Seamless integration with rsg-radialmenu
 
+Preview: https://youtu.be/UiZVDP3HF7w
+
 ## 📋 Dependencies
 - [rsg-core](https://github.com/Rexshack-RedM/rsg-core)
 - [rsg-radialmenu](https://github.com/Rexshack-RedM/rsg-radialmenu)
