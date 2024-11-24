@@ -40,7 +40,7 @@ Config.Menus = {
             {
                 id = 'staff_doorlock',
                 title = 'Door Lock',
-                icon = 'screwdriver-wrench',
+                icon = 'door-open',
                 type = 'command',
                 event = 'doorlock',
                 shouldClose = true
