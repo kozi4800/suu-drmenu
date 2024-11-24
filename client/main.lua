@@ -21,7 +21,7 @@ local function ManageMenu(menuName, shouldAdd)
 end
 
 -- Event handler for updating menus based on Discord roles
-RegisterNetEvent('custom_radialmenu_rsg:addMenus', function(allowedMenus)
+RegisterNetEvent('suu_drmenu:addMenus', function(allowedMenus)
     -- Remove all existing menus
     for menuName in pairs(activeMenus) do
         ManageMenu(menuName, false)
@@ -38,18 +38,18 @@ end)
 -- Initial role check when resource starts
 CreateThread(function()
     Wait(2000) -- Wait for resources to load
-    TriggerServerEvent('custom_radialmenu_rsg:checkRoles')
+    TriggerServerEvent('suu_drmenu:checkRoles')
 end)
 
 -- Check roles when player loads
 RegisterNetEvent('RSGCore:Client:OnPlayerLoaded', function()
     Wait(2000)
-    TriggerServerEvent('custom_radialmenu_rsg:checkRoles')
+    TriggerServerEvent('suu_drmenu:checkRoles')
 end)
 
 -- Command to manually refresh menus
 RegisterCommand('refreshmenus', function()
-    TriggerServerEvent('custom_radialmenu_rsg:checkRoles')
+    TriggerServerEvent('suu_drmenu:checkRoles')
 end)
 
 -- Cleanup when resource stops
