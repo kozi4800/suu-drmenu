@@ -47,7 +47,7 @@ local function HasRole(userRoles, roleName)
 end
 
 -- Main event for checking roles and sending menu data to client
-RegisterNetEvent('custom_radialmenu_rsg:checkRoles', function()
+RegisterNetEvent('suu_drmenu:checkRoles', function()
     local src = source
     local discordId = GetDiscordId(src)
     local allowedMenus = {}
@@ -57,7 +57,7 @@ RegisterNetEvent('custom_radialmenu_rsg:checkRoles', function()
         if Config.Discord.Debug then
             print("[Discord Debug] No Discord ID found for player")
         end
-        TriggerClientEvent('custom_radialmenu_rsg:addMenus', src, allowedMenus)
+        TriggerClientEvent('suu_drmenu:addMenus', src, allowedMenus)
         return
     end
 
@@ -69,7 +69,7 @@ RegisterNetEvent('custom_radialmenu_rsg:checkRoles', function()
         if Config.Discord.Debug then
             print("[Discord Debug] Failed to fetch member data")
         end
-        TriggerClientEvent('custom_radialmenu_rsg:addMenus', src, allowedMenus)
+        TriggerClientEvent('suu_drmenu:addMenus', src, allowedMenus)
         return
     end
 
@@ -87,7 +87,7 @@ RegisterNetEvent('custom_radialmenu_rsg:checkRoles', function()
         print("[Discord Debug] Allowed menus for player " .. src .. ":", json.encode(allowedMenus))
     end
 
-    TriggerClientEvent('custom_radialmenu_rsg:addMenus', src, allowedMenus)
+    TriggerClientEvent('suu_drmenu:addMenus', src, allowedMenus)
 end)
 
 -- Test Discord connection when resource starts
