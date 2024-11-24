@@ -1,5 +1,5 @@
-# DR-Menu (Discord Radial Menu)
-An addon for [rsg-radialmenu](https://github.com/Rexshack-RedM/rsg-radialmenu) that integrates Discord roles to provide dynamic, role-based menu access in RedM.
+# Suu-DR-Menu (Discord Radial Menu)
+An addon for [rsg-radialmenu](https://github.com/Rexshack-RedM/rsg-radialmenu) that integrates Discord roles to provide dynamic, role-based menu access in RSG.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
